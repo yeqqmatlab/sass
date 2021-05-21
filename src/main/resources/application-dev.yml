@@ -1,0 +1,24 @@
+
+server:
+  port: 8081
+  servlet:
+    context-path: /sass
+spring:
+  swagger:
+    enable: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: lc12345
+    url: jdbc:mysql://192.168.1.210:3307/data_mining?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: zsy
+
+
+hbase:
+  master: ip243:60000
+  zookeeper:
+    quorum: ip239,ip243,ip244
+    property:
+      clientPort: 2181
+zookeeper:
+  znode:
+    parent: /hbase
